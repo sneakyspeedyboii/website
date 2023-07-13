@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import './globals.css'
 import { Silkscreen, Inter } from 'next/font/google'
 
@@ -7,7 +8,7 @@ export const silkscreen = Silkscreen({
 });
 export const inter = Inter({ subsets: ["latin"] })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'SneakySpeedyBoii',
   description: 'SneakySpeedyBoii&apos;s Website',
 }
