@@ -1,4 +1,5 @@
 "use client"
+
 import styles from './page.module.css';
 import { silkscreen } from './layout';
 import Background from '@/app/assets/bg';
