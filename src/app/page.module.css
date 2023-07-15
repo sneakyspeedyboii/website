@@ -215,3 +215,14 @@
     height: 30px;
   }
 }
+
+@media screen and (max-width: 380px) {
+  .name {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .icon {
+    height: 25px;
+  }
+}
