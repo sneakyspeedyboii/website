@@ -1,12 +1,22 @@
 import { Silkscreen, Inter } from 'next/font/google'
-import './globals.css'
 import Script from 'next/script';
+import { Metadata } from 'next';
 
-export const silkscreen = Silkscreen({
+import icon from '#/icon.png'
+
+import './globals.css'
+
+export const metadata: Metadata = {
+  title: 'SneakySpeedyBoii',
+  description: 'SneakySpeedyBoi\' website',
+}
+
+const silkscreen = Silkscreen({
   weight: "400",
-  subsets: ["latin"]
+  subsets: ["latin"],
+  variable: '--font-logo'
 });
-export const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"], variable: '--font-main' })
 
 export default function RootLayout({
   children,
@@ -18,8 +28,8 @@ export default function RootLayout({
       <head>
         <title>SneakySpeedyBoii</title>
       </head>
-      <body className={inter.className}>{children}</body>
-      <Script async src="https://umami.sneakyspeedyboii.com/script.js" data-website-id="a3290c6c-2952-4eb3-9d48-9d7c8a146269"/>
+      <body className={`${silkscreen.variable} ${inter.variable}`}>{children}</body>
+      <Script async src="https://umami.sneakyspeedyboii.com/script.js" data-website-id="a3290c6c-2952-4eb3-9d48-9d7c8a146269" />
     </html>
   )
 }
