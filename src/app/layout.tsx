@@ -29,7 +29,7 @@ export default function RootLayout({
         <title>SneakySpeedyBoii</title>
       </head>
       <body className={`${silkscreen.variable} ${inter.variable}`}>{children}</body>
-      <Script async src="https://umami.sneakyspeedyboii.com/script.js" data-website-id="a3290c6c-2952-4eb3-9d48-9d7c8a146269" />
+      <Script src="https://umami.sneakyspeedyboii.com/script.js" data-website-id="29d44082-53ff-46a3-84dd-251b81597524" />
     </html>
   )
 }
